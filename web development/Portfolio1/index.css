@@ -1,0 +1,537 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100wh;
+    height: 100vh;
+  
+}
+
+.header{
+    height: 18%;
+    width: 100%;
+    background-color: black;  
+    display: flex;
+    justify-content: space-evenly;
+}
+   
+
+.left_header li{
+    color: white;
+    list-style: none;
+    font-size: 40px;
+    margin-top: 10%; 
+}
+.left_header li:hover{
+    color:red;
+    list-style: none;
+    font-size: 40px;
+    margin-top: 4%; 
+}
+
+.left_header li::after{
+    content: "";
+    position: absolute;
+    height: 0.30%;
+    width: 10%;
+    background-color: red;
+    display: block;
+}
+
+.right_header li{
+
+    color:red;
+    list-style: none;
+    font-size: 26px;
+    display: inline-block;
+    margin: 3%;
+    
+}
+.right_header li:hover{
+
+    color:white;
+    list-style: none;
+    font-size: 26px;
+    display: inline-block;
+    margin: 2%;
+    
+}
+.right_header li::after{
+    content: "";
+    position: absolute;
+    height: 0.20%;
+    width: 5%;
+    background-color: whitesmoke;
+    display: block;
+}
+
+.intro_header{
+    height: 440px;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    padding: 4%;
+}
+
+.left_intro{
+    width: 50%;
+    color:white;
+    padding-top: 6%;
+    margin-left: 6%;
+}
+span{
+    color: red;
+    font-size: 30px;
+}
+.left_intro h1{
+    font-size: 45px;
+    padding-top: 3%;
+}
+.left_intro h5{
+    font-size: 20px;
+    padding-top: 1%;
+}
+.left_intro h4{
+    font-size: 25px;
+    animation-name: A;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    position: relative; 
+}
+@keyframes A{
+    form{
+        top:0;
+        left:0;
+    }
+    to{
+      top:0;
+      left:50px;
+    }
+}
+.intro_log i{
+ 
+    color: red;
+    font-size: 25px;
+    padding-top: 30px;
+    margin: 6px;
+}
+
+.right_intro {
+    background-image: url(IMG_20190810_002848_531.jpg);
+    height: 370px;
+    width: 35%;
+    background-size: cover;
+    margin-left: 100px;
+    margin-top: 0.50%;
+}
+   .right_intro h6{
+    color: white;
+    padding-top: 360px;
+    font-size: 20px;
+    padding-left: 110px;
+}
+
+.about_header{
+    height: 540px;
+    width: 100%;
+    background-color: black;
+    padding-top: 6%;
+    display: flex;
+}
+
+.left_about{
+    height:400px ;
+    width:50% ;
+    background-image: url(pro_img1.png);
+    animation-name: fontend;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    position: relative; 
+}
+@keyframes  fontend{
+
+    0% {
+        background-image: url(pro_img11.jpg);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-image: url(pro_img7.jpg);
+        left: 0;
+        top: 0px;
+    }
+
+    50% {
+        background-image: url(pro_img10.jpg);
+        left: 0;
+        top: 0;
+    }
+
+    75% {
+        background-image: url(pro_img2.jpg);
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-image: url(pro_img3.jpg);
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.right_about{
+    height: 400px;
+    width: 45%;
+    padding-left: 12%;
+    color: white;
+}
+.right_about h1{
+    color: white;
+    padding-top: 3%;
+    font-size: 45px;
+
+}
+span{
+    font-size: 45px;
+}
+.right_about h4{
+    color: white;
+    padding-top: 3%;
+    font-size: 25px;
+
+}
+.right_about p{
+    padding-top:4%;
+    font-size: 15px;
+}
+.right_about button{
+    background-color: lightcoral;
+    color: black;
+    margin-top: 8%;
+    margin-left: 30%;
+   border-radius: 60%;
+    font-size: 20px;
+    padding:3%;
+    box-shadow:  10px 15px 5px 3px gold;
+    font-weight: 6%;
+}
+.right_about button:hover{
+    background-color: lightseagreen;
+    color: black;
+    margin-top: 8%;
+    margin-left: 20%;
+   border-radius: 60%;
+    font-size: 20px;
+    padding:3%;
+}
+
+
+    
+    .Skill_header{
+        height: 400px;
+        width: 100%;
+       background-color:lemonchiffon;
+      
+    }
+    .Skill_header h1{
+        color: black;
+        font-size: 50px;
+       text-align: center;
+       
+    }
+    .Skill_left{
+        height: 400px;
+        width: 50%;
+        margin-left: 38%;
+        padding-top: 5%;
+        
+    }
+    .Skill_left ul li{
+        color: red;
+        font-size: 25px;
+        
+    }
+
+
+    .right_skill{
+        height: 400px;
+        width: 50%;
+        padding-top: 5%;
+        margin-right: 30%;
+      
+        
+    }
+
+    .right_skill ul li{
+       
+        color: red;
+        font-size: 25px;
+       margin-left: 5%;
+    }
+
+   .g{
+    display: flex;
+   
+   }
+    
+
+  
+    
+
+    
+    .project_header{
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        
+    }
+   
+    .abc h1{
+        color: white;
+         font-size: 50px;  
+        text-align: center;
+            
+    }
+
+    .Q{
+        width: 32%;
+        height: 300px;
+        
+    }
+    .E{
+        display: flex;
+        
+    }
+    .project1_link{
+        height:300px ;
+        width:32% ;
+        color: white;
+       
+    }
+    .project1_link h1{
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 200%;
+        color:blueviolet;
+    }
+    .project1_link p {
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 150%;
+    }
+    .project1_link button a {
+        border-radius: 40% solid white;
+         color: white;
+         background-color: red;
+         font-size: 200%;
+         padding: 5%;
+         margin-top: 5%;
+        
+     }
+    
+    
+
+    
+    .project2_link{
+        height:300px ;
+        width:32% ;
+        color: white;
+       
+    }
+    .project2_link h1{
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 200%;
+        color:blueviolet;
+    }
+    .project2_link p {
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 150%;
+    }
+    .project2_link p {
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 150%;
+    }
+    .project2_link button a {
+        border-radius: 40% solid white;
+         color: white;
+         background-color: red;
+         font-size: 200%;
+         padding: 5%;
+        
+     }
+  
+    
+    
+
+    
+    .project3_link{
+        height:300px ;
+        width:32% ;
+        color:white;
+       
+    }
+    .project3_link h1 {
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 200%;
+        color:blueviolet;
+    }
+    
+    .project3_link p {
+        margin-top: 8%;
+        margin-right: 4%;
+        font-size: 150%;
+    }
+
+    .project3_link button a {
+       border-radius: 40% solid white;
+        color: white;
+        background-color: red;
+        font-size: 200%;
+        padding: 5%;
+       
+    }
+    
+    
+
+    .contect_heading{
+        height: 380px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .contect_heading h1{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+    .input_box{
+        background-color:black;
+        height: 380px;
+        width: 100%;
+       
+        
+    
+    }
+    .G{
+        font-size: 20px;
+       margin-left: 35%;
+        background-color: white;
+        color: black;   
+    }
+    .H{
+        font-size: 15px;
+        margin: 1%;
+        background-color:white;
+        color: black; 
+        height: 12%; 
+        width: 40%;
+    }
+    .input_box1 button{
+        
+            background-color:rgb(7, 66, 63);
+            color:white;
+            margin-top: 1%;
+           border-radius: 50%;
+           font-size: 24px;
+          margin-left: 45%;
+            box-shadow:  10px 15px 5px 2px lawngreen;;
+            font-weight: 10%;
+    }
+        .input_box1 button:hover{
+            background-color: rgb(2, 59, 57);
+            color:white;
+            font-weight: 10%;
+          margin-top: 1%;
+          margin-left: 45%;
+           border-radius: 50%;
+            font-size: 24px;
+            box-shadow:  10px 15px 5px 2px yellow;
+    }
+
+    
+.footer{
+    background-color:rgb(65, 63, 63);
+    height: 50px;
+    width: 100wh;
+}
+.footer_menu {
+    color:white ;
+    font-size: 16px;
+    text-align: center;
+  
+}
+
+.down_cv{
+    width: 100%;
+    height: 140px;
+    background-color: black;
+}
+.down_cv button{
+    
+    background-color:black;
+    color:white;
+    margin-top: 1%;
+   border-radius: 50%;
+   font-size: 24px;
+ margin-left: 45%;
+    box-shadow:  15px 20px 20px 6px red;
+    font-weight: 10%;
+    
+}
+.down_cv button:hover{
+    background-color: rgb(2, 59, 57);
+    color:white;
+    font-weight: 10%;
+  margin-top: 1%;
+  margin-left: 45%;
+   border-radius: 50%;
+    font-size: 24px;
+    box-shadow:  10px 15px 5px 2px yellow;
+}   
+       
+        
+    
+    
+    
+
+
+
+    
+
+
+   
+
+   
+
+   
+
+
+   
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
